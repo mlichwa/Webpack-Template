@@ -1,7 +1,7 @@
-# Project Title
+[![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
-Webpack Starter Template
-
+# Webpack Starter Template
 ## Getting Started
 
 This website skeleton is build based on npm and Webpack. Modules are installed thrugh npm and later on all files are compiled through Webpack. I decided to keep the html files 
@@ -22,53 +22,54 @@ In order to install the template, you have to navigate to the root of the projec
 npm install
 ```
 
-At this point, npm should install all 
+At this point, npm should install all modules necessary to run this example. You can add/remove
+modules in the package.js file.
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+### How this template works
 
-Explain how to run the automated tests for this system
+Thanks to the use of Webpack and npm modules, there are lots of features you might want to incorporate into your web workflow:
 
-### Break down into end to end tests
+* Development folder for building your app- /src
+* Production folder for compiling the app- /dist
+* Minification plugins to make your html/css/js files minified.
+* Code documentation with JSDoc module.- /docs
+* Jquery already included.
+* Bootstrap included.
+* Mustache.js enabled.
+* Dist and Docs folders rebuild every time you run prod script
 
-Explain what these tests test and why
+### Development
+
+Development enviroment can be run by: 
 
 ```
-Give an example
+npm run dev
 ```
 
-### And coding style tests
+Once app compiles, you will be able to access the code by going to http://localhost:8080 in your browser.This command uses webpack-dev-server and doesn't write any new files to the disk. While  webpack-dev-server runs, you can modify your css/js and html files. Localhost website you're working on will be refreshed every time you save your progress.
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Deployment is as easy as running npm run dev command in your terminal window.
 
-## Built With
+```
+npm run dev
+```
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Once the code compiles, all files will be stored in the distribution /dist folder. Javascript will be bundled into one file and minified. SCSS files will be converted to CSS, combined and minified as well. HTML files will be minified. Separate /img and /font folders will be added.
+Alongside adding the /dist folder, Webpack will run JSDoc plugin and create /docs folder with updated documentation for javascript. Also, this README file will be added to the front page of the documentation.
 
-## Contributing
+## Packages and Modules
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+The goal of this template was to automate as many tedious "behind the scene" processes as possible. In order to understand development and deployment processes, take a look at project.json and webpack.config.js. 
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* (Michal Lichwa)[http://michallichwa.com]
 
 ## License
 
@@ -76,6 +77,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* I used [Academind Webpack Tutorial](https://www.youtube.com/watch?v=GU-2T7k9NfI&list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os) while creating this template. 
+

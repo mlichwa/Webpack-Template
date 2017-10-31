@@ -41,8 +41,8 @@ module.exports = {
 		},	
 		{ 
 			test: /\.html$/,
-			loader: 'mustache-loader?{ minify: { removeComments: false } }',// If you're using Mustache.js, leave the mustache loader
-			loader:['html-loader'] // In order to use pure html, uncomment this loader and comment out the line above.
+			loader: 'mustache-loader?{ minify: { removeComments: false } }',
+			loader:['html-loader'] 
 		},
 		{ 
 			test: /\.(jpg|png)$/,
