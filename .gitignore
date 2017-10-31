@@ -1,7 +1,7 @@
 # Dependency directories
 node_modules/
 .DS_Store
-
+npm-debug.log
 # Release build and Docs
 # Normally, I would keep both outside of git... but it might be cool to include both on GitHub Pages.
 # dist/
