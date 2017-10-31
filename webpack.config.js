@@ -11,7 +11,7 @@ var ghpages = require('gh-pages');
 // ghpages.publish('dist', {
 // 	repo: 'https://github.com/Strangeflock/Webpack-Template.git'
 //   }, callback);
-ghpages.publish('dist', function(err) {});
+
 
 module.exports = {
   entry: {
@@ -109,3 +109,4 @@ module.exports = {
 	
   ]
 };
+ghpages.publish('dist', function(err) {});
