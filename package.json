@@ -4,8 +4,11 @@
   "description": "Starter template for web projects. Based on Webpack and NPM",
   "main": "index.js",
   "scripts": {
-    "prod": "webpack -p",
-    "dev": "webpack-dev-server"
+    "prod": "webpack -p", 
+	"dev": "webpack-dev-server", 
+	"clean": "rm -rf dist/*", 
+    "release": "npm run clean && npm run prod", 
+    "gh-deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push" 
   },
   "keywords": [],
   "author": "Michal Lichwa",
