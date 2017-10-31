@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
+[![webpack version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
 # Webpack Starter Template
