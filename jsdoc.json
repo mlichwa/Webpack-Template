@@ -1,0 +1,32 @@
+{
+    "tags": {
+		"allowUnknownTags": true,
+		"dictionaries": ["jsdoc"]
+    },
+    "source": {
+		"include": "src/js/", 
+		"exclude": [
+			"node_modules/",
+			"plugins/"
+		],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+		"referenceTitle": "Project SDK Title",
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "default": {
+            "outputSourceFiles": true
+        }
+	},
+	"opts": {
+        "destination": "./docs/",
+        "encoding": "utf8",
+        "private": true,
+		"recurse": true,
+		"readme": "./README.md",
+        "template": "./node_modules/jsdoc/templates/default/"
+    }
+}
