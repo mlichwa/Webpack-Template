@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# Release build
+dist/
+
+# JSDoc Documentation
+docs/

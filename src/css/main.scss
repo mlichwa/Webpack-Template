@@ -1,0 +1,31 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "colors";
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    h1 {
+
+        background-color: $main;
+    }
+
+    h2 {
+		color: $main;
+    }
+}
+
+#title{
+	color:$main;
+
+}
+#subtitle{
+	color: $secondary;
+
+}
+
+img{
+	width:auto;
+	height:40px;
+}
