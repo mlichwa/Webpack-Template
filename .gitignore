@@ -1,7 +1,8 @@
 # Dependency directories
 node_modules/
+.DS_Store
 
 # Release build and Docs
 # Normally, I would keep both outside of git... but it might be cool to include both on GitHub Pages.
-# dist/
+dist/
 # docs/
