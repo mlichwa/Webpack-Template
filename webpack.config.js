@@ -7,9 +7,11 @@ var extractPlugin = new ExtractTextPlugin({
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var JsDocPlugin = require('jsdoc-webpack-plugin-v2');
-
-
-
+var ghpages = require('gh-pages');
+// ghpages.publish('dist', {
+// 	repo: 'https://github.com/Strangeflock/Webpack-Template.git'
+//   }, callback);
+ghpages.publish('dist', function(err) {});
 
 module.exports = {
   entry: {
@@ -103,6 +105,7 @@ module.exports = {
 	new CleanWebpackPlugin(['dist', 'docs']),
 	new JsDocPlugin({
 		conf: path.resolve(__dirname, 'jsdoc.json'),
-	})
+	}),
+	
   ]
 };
