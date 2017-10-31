@@ -6,7 +6,14 @@
 export class Custom {
 
 
-
-	
+// 	/**
+// 	* @method newCustomFunction
+// 	* @description Function does something.
+// 	*/
+//    const newCustomFunction = () =>{
+   
+   
+//    }
 
 }
+
