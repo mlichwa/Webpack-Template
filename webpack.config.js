@@ -39,7 +39,6 @@ module.exports = {
 		},	
 		{ 
 			test: /\.html$/,
-			loader: 'mustache-loader?{ minify: { removeComments: false } }',
 			loader:['html-loader'] 
 		},
 		{ 
@@ -98,7 +97,7 @@ module.exports = {
 		filename: 'index.html',
 		template: 'src/index.html'
 	}),
-	new CleanWebpackPlugin(['dist', 'docs']),
+	new CleanWebpackPlugin(['dist']),
 	new JsDocPlugin({
 		conf: path.resolve(__dirname, 'jsdoc.json'),
 	}),

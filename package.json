@@ -6,7 +6,7 @@
   "scripts": {
     "prod": "webpack -p",
 	"dev": "webpack-dev-server",
-	"deploy:gh": "node ./build-gh-pages.js"
+	"deploy:gh": "npm run prod && node ./build-gh-pages.js"
   },
   "keywords": [],
   "author": "Michal Lichwa",
